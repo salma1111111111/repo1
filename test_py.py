@@ -9,7 +9,7 @@ def test_answer1():
 #test fonction 2
 def test_get_age():
     # Given.
-    yyyy, mm, dd = map(int, "2002/09/11".split(""))   
+    yyyy, mm, dd = map(int, "2002/04/14".split(""))   
     # When.
     age = get_age(yyyy, mm, dd)
     # Then.
