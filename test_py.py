@@ -8,12 +8,8 @@ def test_answer1():
 
 #test fonction 2
 def test_get_age():
-    # Given.
-    yyyy, mm, dd = map(int, "2002/04/14".split(""))   
-    # When.
-    age = get_age(yyyy, mm, dd)
-    # Then.
-    assert age == 21
+    
+    assert get_age(1,2) == 3
     
 #tset fonction 3
 def test_answer2():
