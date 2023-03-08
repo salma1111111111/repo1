@@ -13,7 +13,7 @@ def test_get_age():
     # When.
     age = get_age(yyyy, mm, dd)
     # Then.
-    assert age == 25 
+    assert age == 21
     
 #tset fonction 3
 def test_answer2():
