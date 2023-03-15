@@ -13,5 +13,6 @@ jobs:
         env:
           SLACK_WEBHOOK: https://hooks.slack.com/services/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
         with:
-          status: success
+          status: ${{ job.status }}
+          text: Workflow has completed with status ${{ job.status }}!
           args: '{"text": "Changes have been made to the repository!"}'
