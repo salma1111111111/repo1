@@ -1,5 +1,16 @@
-slack:
-  webhook_url: https://hooks.slack.com/services/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
-  mentions: "@channel"
-  title: "Github Notification"
-  color: "#00FF00"
+name: Slack Notification
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  slack-notification:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send Slack Notification
+        uses: 8398a7/action-slack@v3
+        env:
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+        with:
+          args: '{"text": "Changes have been made to the repository!"}'
