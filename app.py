@@ -1,13 +1,12 @@
-# fonction 1
-def inc(x):
-    return x + 1
+'''no module'''
 
-#fonction 2
-import datetime
 
-def get_age(a,b) :
-    return a+b
- 
-#fonction 3
-def deinc(x):
-    return x - 1
+def inc(x_val1):
+    '''fonction 1'''
+    return x_val1 + 1
+def addition(a_num,b_num):
+    '''fonction 2'''
+    return a_num + b_num
+def deinc(x_val2):
+    '''fonction 3'''
+    return x_val2 - 1

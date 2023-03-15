@@ -1,16 +1,14 @@
-from app import inc
-from app import get_age
-from app import deinc
+'''importer ...'''
+import app
 
-#test fonction 1
-def test_answer1():
-    assert inc(1) == 2
 
-#test fonction 2
-def test_get_age():
-    
-    assert get_age(1,2) == 3
-    
-#tset fonction 3
-def test_answer2():
-    assert deinc(3) == 2
+def test_pyanswer1():
+    '''test fonction 1'''
+    assert app.inc(1) == 2
+def test_pyaddition():
+    '''test fonction 2'''
+    assert app.addition(2, 1) == 3
+    assert app.addition(6, 1) == 7
+def test_pyanswer2():
+    '''tset fonction 3'''
+    assert app.deinc(3) == 2
