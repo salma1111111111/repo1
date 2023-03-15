@@ -2,19 +2,15 @@ name: Slack Notification
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   slack-notification:
     runs-on: ubuntu-latest
     steps:
       - name: Send Slack Notification
-        uses: 8398a7/action-slack@v3
-        with:
-          status: success
-          fields: repo,message,commit,author
-          author_name: "Github Actions"
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          text: "Changes have been made to the repository!"
+        uses: 2137328/action-slack@v3
         env:
           SLACK_WEBHOOK: https://hooks.slack.com/services/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
+        with:
+          args: '{"text": "Changes have been made to the repository!"}'
