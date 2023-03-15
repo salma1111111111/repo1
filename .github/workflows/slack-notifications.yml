@@ -1,0 +1,5 @@
+slack:
+  webhook_url: https://hooks.slack.com/services/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
+  mentions: "@channel"
+  title: "Github Notification"
+  color: "#00FF00"
